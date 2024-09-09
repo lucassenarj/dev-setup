@@ -1,0 +1,25 @@
+set guicursor=
+set number
+set relativenumber
+set scrolloff=24
+set tabstop=2 softtabstop=4
+set shiftwidth=2
+set expandtab
+set smartindent
+
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+call plug#end()
+
+colorscheme desert
+
+let mapleader = " "
+
+nnoremap <leader>t :Vex<CR>
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+nnoremap <C-p> :GFiles<CR>
+nnoremap <leader>p :Files<CR>
+nnoremap <C-j> :cnext<CR> 
+nnoremap <C-k> :cprev<CR> 
+inoremap jk <esc>
