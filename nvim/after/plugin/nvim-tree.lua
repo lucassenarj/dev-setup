@@ -3,5 +3,10 @@ require("nvim-tree").setup {
   hijack_cursor = true,
   view = {
     width = 40
+  },
+  git = {
+    enable = true,
+    ignore = false,
+    timeout = 500,
   }
 }
